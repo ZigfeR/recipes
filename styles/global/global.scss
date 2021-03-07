@@ -1,0 +1,39 @@
+body {
+    max-width: 1600px;
+    text-shadow: -1px 1px 40px rgba(0, 0, 0, 55);
+}
+
+.people-slider__p {
+    text-shadow: none;
+}
+
+h1 {
+  font-size: calc((100/16)*1em);
+  
+}
+
+h3 {
+  font-size: calc((18/16)*1em);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
