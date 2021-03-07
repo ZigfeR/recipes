@@ -1,0 +1,79 @@
+header {
+  color: #fff;
+  background-image: linear-gradient(transparent 70%, #7a6484),
+    url(/images/header/BG.png);
+  height: 880px;
+
+  nav,
+  .nav__list,
+  .started {
+    @include flexbox();
+    @include align-items(center);
+  }
+
+  .nav__item,
+  .started__h1,
+  .started__button,
+  .started_p--underline {
+    font-family: "Lato-Bold", "Lato", sans-serif;
+  }
+
+  nav {
+    @include justify-content(space-between);
+
+    .nav__logo {
+      margin-left: -30px;
+    }
+
+    .nav__list {
+      .nav__item {
+        text-transform: uppercase;
+        font-size: calc((14 / 16) * 1em);
+      }
+      .nav__item:not(:nth-child(1)) {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  .started {
+    @include flex-direction(column);
+    @include justify-content(center);
+
+    margin: 20% auto;
+
+    .started__p-title {
+      word-spacing: 0.25em;
+      margin-left: 15px;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-style: italic;
+      font-size: calc((36 / 16) * 1em);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .started__h1 {
+      margin: 0;
+      letter-spacing: 0.05em;
+    }
+
+    .started__button {
+      background: transparent;
+      font-size: calc((18 / 16) * 1em);
+      color: #fff;
+      border: 3px solid #fff;
+      padding: 20px 80px;
+      margin: 20px auto;
+    }
+
+    .started__p {
+      margin-top: 20px;
+      font-family: "Lato-Regular", "Lato", sans-serif;
+      font-size: calc((14 / 16) * 1em);
+      letter-spacing: 0.05em;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
