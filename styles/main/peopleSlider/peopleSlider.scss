@@ -1,0 +1,62 @@
+.people-slider {
+  @include flexbox();
+  @include justify-content(start);
+  @include flex-direction(column);
+  position: relative;
+
+  background-color: #4a3949;
+
+  height: 460px;
+  background-image: url(/images/peopleSlider/BGpeople.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  .people-slider-info {
+    color: #fff;
+    margin: 6% 10%;
+    margin-bottom: 32px;
+    text-align: center;
+
+    .people-slider__p {
+      margin-top: 15px;
+      line-height: 1.5em;
+    }
+
+    .people-slider_quote {
+      font-family: "Lato-Thin", "Lato", sans-serif;
+      font-size: calc((30 / 16) * 1em);
+    }
+
+    .people-slider_autor {
+      font-family: "Lato-ThinItalic", "Lato", sans-serif;
+      font-size: calc((18 / 16) * 1em);
+    }
+  }
+
+  .inner-wrapper {
+    .inner-wrapper__control {
+      appearance: none;
+      position: relative;
+      left: 48.5%;
+      height: 10px;
+      width: 10px;
+      margin-right: 0.5rem;
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.15s ease-out 0s;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.5;
+
+      }
+      &:checked {
+        opacity: 1;
+
+      }
+    }
+  }
+}
