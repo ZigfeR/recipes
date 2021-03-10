@@ -1,0 +1,27 @@
+.footer {
+  
+  background-color: #f7f7f7;
+  height: 100px;
+  
+  font-family: "Lato-Light", "Lato", sans-serif;
+  font-size: calc((14 / 16) * 1em);
+  color: rgba(139, 139, 139, 0.5);
+  user-select: none !important;
+  .footer__container {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    
+    height: 100%;    
+    margin: 0 13%;
+  }
+  
+  .footer__email {
+    font-family: "Lato-Regular", "Lato", sans-serif;
+    letter-spacing: 2.5px;
+
+    .footer__email_a {
+      color: #000;
+    }
+  }
+}
