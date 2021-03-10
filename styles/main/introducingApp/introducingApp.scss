@@ -1,0 +1,50 @@
+.introducing-app {
+  background-color: #f7f7f7;
+
+  .introducing-app__container {
+    max-width: 1230px;
+  }
+
+  .smartfone {
+    @include flexbox();
+    @include align-items(center);
+
+    padding-top: 100px;
+
+    .text-info {
+      width: 44%;
+      margin-left: 9.5%;
+      height: 620px;
+
+      .text-info__title {
+        font-family: "Lato-Bold", "Lato", sans-serif;
+        letter-spacing: 1px;
+
+        margin-bottom: 10px;
+        
+        &::after {
+          content: "";
+          display: block;
+          width: 15%;
+          padding-top: 5px;
+          border-bottom: 2px solid #f57365;
+        }
+      }
+
+      .text-info__p {
+        line-height: 1.6em;
+        font-family: "Lato-Light", "Lato", sans-serif;
+        margin-bottom: 1.9em;
+      }
+
+      .install-app__body {
+        @include flexbox();
+        user-select: none !important;
+
+        a:nth-child(1){
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
