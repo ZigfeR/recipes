@@ -17,16 +17,24 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
+
   <body>
     <header class="header__body header">
       <div class="header__container container">
         <nav class="header__nav nav">
-          <img class="nav__logo" src="images/header/logo.png">
+          <img class="nav__logo" src="images/header/logo.png" alt="logo" />
           <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link">Log in</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Sign up</a></li>
-            <li class="nav__item">
-              <a href="" class="nav__link"><img class="nav__burger" src="images/header/burger.png"></a>
+            <li class="nav__item"><a href="#" class="nav__link nav__link-login">Log in</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link-signup">Sign up</a></li>
+            <li class="nav__item nav__item-burger">
+              <input type="checkbox" id="burger-input" />
+              <label id="burger" for="burger-input">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <ul id="menu" class="displayNone">
+              </ul>
             </li>
           </ul>
         </nav>
@@ -36,7 +44,7 @@
           <button class="started__button">GET STARTED</button>
           <p class="started__p">
             OR SEND US YOUR OWN RECIPES AND
-            <a href="" class="started_p--underline">GET REWARDED!</a>
+            <a href="#" class="started_p--underline">GET REWARDED!</a>
           </p>
         </div>
       </div>
@@ -45,61 +53,92 @@
       <div class="get-an-offer">
         <div class="get-an-offer__container container">
           <div class="get-body">
-            <img class="get-inspired__img get__img" src="images/getAnOffer/Burger.png">
+            <div class="get__img-body get-inspired__img">
+              <!-- <img class="get-inspired__img get__img" src="images/getAnOffer/Burger.png"> -->
+            </div>
             <h3 class="get__title get__h3">GET INSPIRED</h3>
             <p class="get__p">
               Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel
-              enim a elit viverra elementuma. Aliquam erat volutpat.
+              enim a elit viverra elementuma. <br />
+              Aliquam erat volutpat.
             </p>
           </div>
           <div class="get-body">
-            <img class="get-rewarded__img get__img" src="images/getAnOffer/Money.png">
+            <div class="get__img-body get-rewarded__img">
+              <!-- <img class="get-rewarded__img get__img" src="images/getAnOffer/Money.png"> -->
+            </div>
             <h3 class="get__title get__h3">GET REWARDED</h3>
             <p class="get__p">
               Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel
-              enim a elit viverra elementuma. Aliquam erat volutpat.
+              enim a elit viverra elementuma. <br />
+              Aliquam erat volutpat.
             </p>
-          </img>
+          </div>
           <div class="get-body">
-            <img class="get-social__img get__img"  src="images/getAnOffer/Shef.png">
+            <div class="get__img-body get-social__img">
+              <!-- <img class="get-social__img get__img"  src="images/getAnOffer/Shef.png"> -->
+            </div>
             <h3 class="get__title get__h3">GET SOCIAL</h3>
             <p class="get__p">
               Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel
-              enim a elit viverra elementuma. Aliquam erat volutpat.
+              enim a elit viverra elementuma. <br />
+              Aliquam erat volutpat.
             </p>
-          </img>
+          </div>
         </div>
       </div>
       <div class="introducing-app">
         <div class="introducing-app__container container">
           <div class="introducing-app__smartfone smartfone">
-            <img class="smartfone__img" src="images/introducingApp/iPhone 5s.png">
-          </img>
-          <div class="introducing-app__text-info text-info">
-            <h3 class="text-info__title text-info__h3">
-              INTRODUCING THE FUDI APP
-            </h3>
-            <p class="text-info__p">
-              Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet.
-              Aeneanet felis sit amet diam mollis ullamcorper. Nullam consequat
-              sem a ante vest ibulum tristique. Suspendisse tristique lacus ac
-              mattis porta.
-            </p>
-            <p class="text-info__p">
-              Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet
-              libero. In libero dui, eleifend eu nisi id, egestas fringilla
-              odio. In varius quam a mas sa hendrerit ullamcorper a eu justo.
-              Suspendisse porta mattis convallis. Aenean tempus ligula ac odio
-              rhoncus, quis aliquam dolor accumsan.
-            </p>
-            <p class="text-info__p">
-              Suspendisse aliquet felis consectetur libero congue, sed pulvinar
-              diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet
-              ultrices ante, a mattis massa.
-            </p>
-            <div class="install-app__body">
-              <img class="install-app-store" src="images/introducingApp/logoAppStore.png">
-              <img class="install-google-play" src="images/introducingApp/logoGooglePlay.png">
+            <div class="smartfone__img-container">
+              <img
+                class="smartfone__img"
+                src="images/introducingApp/iPhone 5s.png"
+                alt="smatrfone"
+              />
+            </div>
+            <div class="introducing-app__text-info text-info">
+              <h3 class="text-info__title text-info__h3">
+                INTRODUCING THE FUDI APP
+              </h3>
+              <p class="text-info__p">
+                Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet.
+                Aeneanet felis sit amet diam mollis ullamcorper. Nullam
+                consequat sem a ante vest ibulum tristique. Suspendisse
+                tristique lacus ac mattis porta.
+              </p>
+              <p class="text-info__p">
+                Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet
+                libero. In libero dui, eleifend eu nisi id, egestas fringilla
+                odio. In varius quam a mas sa hendrerit ullamcorper a eu justo.
+                Suspendisse porta mattis convallis. Aenean tempus ligula ac odio
+                rhoncus, quis aliquam dolor accumsan.
+              </p>
+              <p class="text-info__p">
+                Suspendisse aliquet felis consectetur libero congue, sed
+                pulvinar diam malesuada. Duis vehicula a nibh id hendrerit.
+                Donec sit amet ultrices ante, a mattis massa.
+              </p>
+              <div class="install-app__body">
+                <a href="">
+                  <div>
+                    <img
+                      class="install-app-store"
+                      src="images/introducingApp/logoAppStore.png"
+                      alt="App Store"
+                    />
+                  </div>
+                </a>
+                <a href="">
+                  <div>
+                    <img
+                      class="install-google-play"
+                      src="images/introducingApp/logoGooglePlay.png"
+                      alt="Google Play"
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -107,7 +146,11 @@
       <div class="people-slider">
         <div class="people-slider__container container">
           <div class="people-slider-info">
-            <img class="people-slider__img" src="images/peopleSlider/fotoPeole.png">
+            <img
+              class="people-slider__img"
+              src="images/peopleSlider/fotoPeole.png"
+              alt="foto"
+            />
             <p class="people-slider_quote people-slider__p">
               “I am so happy because I found this recipe, and it just made my
               life easier. Thanks so much for sharing!”
@@ -118,28 +161,32 @@
           </div>
         </div>
         <div class="inner-wrapper">
-          <input
-            checked
-            type="radio"
-            name="slide"
-            class="inner-wrapper__control"
-            id="Slide1"
-          />
-          <label for="Slide1" id="s1"></label>
-          <input
-            type="radio"
-            name="slide"
-            class="inner-wrapper__control"
-            id="Slide2"
-          />
-          <label for="Slide2" id="s2"></label>
-          <input
-            type="radio"
-            name="slide"
-            class="inner-wrapper__control"
-            id="Slide3"
-          />
-          <label for="Slide3" id="s3"></label>
+          <label for="Slide1" id="s1" class="inner-wrapper__label">
+            <input
+              checked
+              type="radio"
+              name="slide"
+              class="inner-wrapper__control"
+              id="Slide1"
+              checked
+            />
+          </label>
+          <label for="Slide2" id="s2" class="inner-wrapper__label">
+            <input
+              type="radio"
+              name="slide"
+              class="inner-wrapper__control"
+              id="Slide2"
+            />
+          </label>
+          <label for="Slide3" id="s3" class="inner-wrapper__label">
+            <input
+              type="radio"
+              name="slide"
+              class="inner-wrapper__control"
+              id="Slide3"
+            />
+          </label>
         </div>
       </div>
       <div class="browse-by-cuisines">
@@ -147,86 +194,121 @@
           <h3 class="browse-by-cuisines__h3">BROWSE BY CUISINES</h3>
         </div>
         <div class="browse-by-cuisines__content">
-          <div class="cuisines">
-            <img src="images/browseByCuisines/Italian.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">327 Recipes</p>
-            <p class="recipes-name">ITALIAN</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/Indian.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">856 Recipes</p>
-            <p class="recipes-name">INDIAN</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/French.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">27 Recipes</p>
-            <p class="recipes-name">FRENCH</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/Steakhouse.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">174 Recipes</p>
-            <p class="recipes-name">STEAKHOUSE</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/Seafood.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">731 Recipes</p>
-            <p class="recipes-name">SEAFOOD</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/Sushi.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">237 Recipes</p>
-            <p class="recipes-name">SUSHI</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/Mexican.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">529 Recipes</p>
-            <p class="recipes-name">MEXICAN</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/Chinese.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">145 Recipes</p>
-            <p class="recipes-name">CHINESE</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/Pizza.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">327 Recipes</p>
-            <p class="recipes-name">PIZZA</p>
-          </div>
-          <div class="cuisines">
-            <img src="images/browseByCuisines/American.png" alt="" class="cuisines__img" />
-            <p class="recipes-counr">1.437 Recipes</p>
-            <p class="recipes-name">AMERICAN</p>
-          </div>
         </div>
         <div class="browse-by-cuisines__footer-container container">
-          <div class="total-recipes__body">
-            <p class="total-recipes__count">23,567</p>
-            <p class="total-recipes__text">Recipes Available</p>
-          </div>
-          <div class="total-recipes__body">
-            <p class="total-recipes__count">431,729</p>
-            <p class="total-recipes__text">Active Users</p>
-          </div>
-          <div class="total-recipes__body">
-            <p class="total-recipes__count">892,173</p>
-            <p class="total-recipes__text">Positive Reviews</p>
-          </div>
-          <div class="total-recipes__body">
-            <p class="total-recipes__count">56,581</p>
-            <p class="total-recipes__text">Photos & Videos</p>
-          </div>
-          <div class="total-recipes__body">
-            <p class="total-recipes__count">3,182</p>
-            <p class="total-recipes__text">Spices and Herbs</p>
-          </div>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <p class="footer__copyright">©2014 Fudi. All Rights Reserved.</p>
-      <p class="footer__email">DESIGN BY: <a class="footer__email_a" href="https://www.bekades.com">WWW.BEKADES.COM</a></p>      
+      <div class="footer__container container">
+        <p class="footer__copyright">©2014 Fudi. All Rights Reserved.</p>
+        <p class="footer__email">
+          DESIGN BY:
+          <a class="footer__email_a" href="https://www.bekades.com"
+            >WWW.BEKADES.COM</a
+          >
+        </p>
+      </div>
     </footer>
+    <div class="modal-user__login modal">
+      <div class="modal-user__body">
+        <form class="modal__login-form">
+          <img class="login__logo" src="images/modal/logo.png" alt="logo"/>
+          <div class="modal__flex-row">
+            <label class="lf--label lf--label-user" for="username">
+            </label>
+            <input
+              id="username"
+              class="lf--input"
+              placeholder="Username or Email"
+              type="text"
+              minlength="4"
+              maxlength="12"
+              required
+            />
+          </div>
+          <div class="modal__flex-row">
+            <label class="lf--label lf--label-password" for="password">
+            </label>
+            <input
+              id="password"
+              class="lf--input"
+              placeholder="Password"
+              type="password"
+              minlength="8"
+              required
+            />
+          </div>
+          <input
+            class="lf--submit"
+            type="submit"
+            value="LOGIN"
+          />
+        </form>
+        <div class="lf--forgot">
+          <p>DON`T HAVE AN ACCOUNT <a href="#">SIGN UP?</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-user__signup modal">
+      <div class="modal-user__body">
+        <form class="modal__login-form">
+          <img class="login__logo" src="images/modal/logo.png" alt="logo"/>
+          <div class="modal__flex-row">
+            <label class="lf--label lf--label-user" for="username">
+            </label>
+            <input
+              id="username"
+              class="lf--input"
+              placeholder="Username"
+              type="text"
+              minlength="4"
+              maxlength="12"
+              required
+            />
+          </div>
+          <div class="modal__flex-row">
+            <label class="lf--label lf--label-email" for="email">
+
+            </label>
+            <input
+              id="email"
+              class="lf--input"
+              placeholder="Email"
+              type="email"
+              required
+            />
+          </div>
+          <div class="modal__flex-row">
+            <label class="lf--label lf--label-password" for="password">
+              
+            </label>
+            <input
+              id="password"
+              class="lf--input"
+              placeholder="Password"
+              type="password"
+              minlength="8"
+              required
+            />
+          </div>
+          <input
+            class="lf--submit"
+            type="submit"
+            value="SIGN UP"
+            title="Необходимо заполнить все поля"
+          />
+        </form>
+        <div class="lf--forgot">
+          <p>IF YOU ALREADY HAVE AN ACCOUNT</p>
+          <a href="#">LOG IN</a>
+        </div>
+      </div>
+    </div>
     <script src="scripts/main.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts//totalCoutResipes.js"></script>
   </body>
 </html>
 <!DOCTYPE html>
