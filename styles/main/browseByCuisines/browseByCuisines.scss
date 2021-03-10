@@ -1,0 +1,89 @@
+.browse-by-cuisines {
+  @include flexbox();
+  @include justify-content(start);
+  @include flex-direction(column);
+
+  margin: 6% auto;
+  margin-bottom: 3.5%;
+
+  .browse-by-cuisines__h3 {
+    font-family: "Lato-Bold", "Lato", sans-serif;
+    word-spacing: 5px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 90px;
+      padding-top: 5px;
+      margin: 0 auto;
+      border-bottom: 2px solid #f57365;
+    }
+  }
+
+  .browse-by-cuisines__content {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 20em);
+    margin-top: 40px;
+
+    .cuisines {
+      $cuisines__p: 10px;
+
+      @include flexbox();
+
+      position: relative;
+
+      p {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 37%;
+        user-select: none !important;
+      }
+
+      .recipes-count {
+        margin-top: -$cuisines__p;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: calc((15.37 / 16) * 1em);
+        color: #fff;
+      }
+
+      .recipes-name {
+        margin-top: $cuisines__p;
+        font-family: "Lato-Bold", "Lato", sans-serif;
+        font-size: calc((36 / 16) * 1em);
+        color: #fff;
+      }
+    }
+  }
+
+  .browse-by-cuisines__footer-container {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+
+    .total-recipes__body {
+      p {
+        margin-top: 10px;
+        letter-spacing: 1px;
+      }
+
+      .total-recipes__count {
+        font-family: "Lato-Bold", "Lato", sans-serif;
+        font-size: calc((36 / 16) * 1em);
+        user-select: none !important;
+      }
+
+      .total-recipes__text {
+        font-family: "Lato-Light", "Lato", sans-serif;
+      }
+    }
+  }
+}
